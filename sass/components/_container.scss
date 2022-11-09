@@ -6,4 +6,12 @@
   @include media-min-width(480px) {
     width: 480px;
   }
+
+  @include media-min-width(768px) {
+    width: 768px;
+  }
+
+  @include media-min-width(1200px) {
+    width: 1200px;
+  }
 }

@@ -1,12 +1,27 @@
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @include media-min-width(1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .features__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.features__item {
+  @include media-min-width(768px) {
+    @include calc-flex-basis(2);
+  }
+
+  @include media-min-width(1200px) {
+    @include calc-flex-basis(4);
+  }
 }
 
 .features__icon {
@@ -24,6 +39,10 @@
   @include font(14px, 1.14, 0.03em, 700);
   text-transform: uppercase;
   text-align: center;
+
+  @include media-min-width(768px) {
+    text-align: left;
+  }
 }
 
 .features__info {
