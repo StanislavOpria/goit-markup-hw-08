@@ -1,13 +1,16 @@
 .btn {
   display: block;
   height: 50px;
+  width: 200px;
+  padding: 10px 0;
 
   border-radius: 4px;
   border: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-family: inherit;
-  @include font(16px, 1.88, 0.06em, 700);
+  @include font(15px, 1.88, 0.06em, 700);
+  text-align: center;
   color: var(--third-background-color);
   background-color: var(--accent-color);
   cursor: pointer;

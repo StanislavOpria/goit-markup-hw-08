@@ -1,17 +1,16 @@
-/* .main-nav {
-} */
+.main-nav {
+  @include media-max-width(767px) {
+    display: none;
+  }
+}
 
 .main-nav__list {
   display: flex;
+  gap: 50px;
 }
 
 .main-nav__item {
-  margin-right: 50px;
   position: relative;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .main-nav__link {

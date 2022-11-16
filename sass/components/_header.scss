@@ -8,15 +8,30 @@
 }
 
 .header__container {
-  height: 80px;
+  position: relative;
+  height: 60px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  @include media-min-width(768px) {
+    height: 80px;
+  }
 }
 
 .header__logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @include media-min-width(768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+  }
+
+  @include media-min-width(1200px) {
+    margin-right: 93px;
+  }
 }
 
 .logo__studio--header {
@@ -24,23 +39,30 @@
 }
 
 .header__contacts {
-  margin-left: auto;
-}
-
-.contacts {
+  @include media-max-width(767px) {
+    display: none;
+  }
   display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  gap: 10px;
+
+  @include media-min-width(1200px) {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
-.contacts__item:first-child {
-  margin-right: 50px;
-}
+// .contacts__item:first-child {
+//   margin-right: 50px;
+// }
 
 .contacts__mail,
 .contacts__tel {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   color: var(--second-text-color);
 

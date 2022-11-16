@@ -11,5 +11,10 @@
   --filter-btn-color: #f5f4fa;
   --icon-color: #afb1b8;
   --backdrop-color: #00000033;
+  --gradient: linear-gradient(
+    to right,
+    var(--gradient-hero-color),
+    var(--gradient-hero-color)
+  );
   --gradient-hero-color: #2f303a66;
 }
